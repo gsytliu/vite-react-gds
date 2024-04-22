@@ -1,0 +1,36 @@
+{
+  "lvl": "status",
+  "lang": "STATUS",
+  "sub": [
+    {
+      "lvl": "eth",
+      "lang": "ETH",
+      "sub": [
+        {
+          "name": "P271",
+          "lang": "ACCOUNT_ACTIVE",
+          "el": "input",
+          "tip": ""
+        },
+        {
+          "name": "P333",
+          "lang": "ACCOUNT_ACTIVE",
+          "el": "select",
+          "opts": [
+            {"v": "0", "t": "SIP", "access": "role==admin"},
+            {"v": "12", "t": "IPVT"}
+          ]
+        },
+        {
+          "name": "P400",
+          "lang": "SERVER",
+          "el": "checkbox"
+        },
+        {
+          "name": "_upload",
+          "lang": "UPLOAD"
+        }
+      ]
+    }
+  ]
+}

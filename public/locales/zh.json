@@ -1,0 +1,13 @@
+{
+  "STATUS": "状态",
+  "ACCT": "帐号",
+  "SIP": "SIP",
+  "IPVT": "IPVT",
+  "ETH": "以太网",
+  "WIFI": "Wi-Fi",
+  "ACCOUNT_ACTIVE": "帐号激活",
+  "ACCOUNT_ACTIVE_TT": "帐号激活tooltip",
+  "SERVER": "服务器",
+  "SERVER_TT": "服务器tooltip",
+  "UPLOAD": "上传"
+}

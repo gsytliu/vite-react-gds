@@ -1,0 +1,89 @@
+.gs-toast {
+  .gsicon {
+    .iconsize(22px);
+    vertical-align: middle;
+    margin-right: 5px;
+    .up(1px);
+    top: unset;
+
+    &.gsicon-info-fill {
+      color: @gs-primary-color;
+    }
+
+    &.gsicon-success-fill {
+      color: @gs-minor-2;
+    }
+
+    &.gsicon-error-fill {
+      color: @gs-minor-4;
+    }
+
+    &.gsicon-warn-fill {
+      color: @gs-minor-3;
+    }
+  }
+}
+
+
+.gs-msg-modal {
+  .ant-modal-body {
+    padding: 24px;
+  }
+  .ant-modal-content {
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+  .ant-modal-confirm-body {
+    .gsicon {
+      font-size: 48px;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      float: none;
+      cursor: unset;
+      &.gsicon-info-fill {
+        color: @gs-primary-color;
+      }
+
+      & + .ant-modal-confirm-title {
+        margin-top: 10px;
+
+        & + .ant-modal-confirm-content {
+          margin-top: 8px;
+          margin-bottom: 28px;
+          margin-left: 0;
+        }
+      }
+      
+      & + .ant-modal-confirm-content {
+        margin-top: 10px;
+        margin-bottom: 28px;
+      }
+    }
+    .ant-modal-confirm-title {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 10px;
+      & +.ant-modal-confirm-content {
+        color: @gs-text-2;
+      }
+    }
+    .ant-modal-confirm-content {
+      color: @gs-text-1;
+      text-align: center;
+      margin-bottom: 38px;
+      margin-top: 22px;
+    }
+  }
+  .ant-modal-confirm-btns {
+    margin-top: 25px;
+    float: none;
+    text-align: center;
+    .ant-btn {
+      min-width: 80px;
+    }
+    .ant-btn + .ant-btn {
+      margin-left: 16px;
+    }
+  }
+}

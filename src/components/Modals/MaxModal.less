@@ -1,0 +1,51 @@
+.max-modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+  background-color: #fff;  
+  display: flex;
+  flex-direction: column;
+  .max-modal-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    .max-modal-content {
+      flex: 1;
+      padding: 24px 24px 30px;
+    }
+  }
+}
+
+.max-modal-crumbs {
+  margin: 0;
+  padding-left: 24px;
+  .mid-height(48px);
+  box-shadow: inset 0 -1px @gs-border-3;
+  span.crumb-item {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 16px;
+    strong {
+      font-weight: normal;
+    }
+    &:not(:last-child) {
+      strong {
+        font-weight: bold;
+        cursor: pointer;
+        &:hover {
+          color: @gs-primary-color;
+        }
+      }
+    }
+  }
+  .gsicon {
+    color: @gs-text-4;
+    font-size: 18px;
+    margin: 0 5px;
+  }
+}
+

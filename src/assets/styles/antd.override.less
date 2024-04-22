@@ -1,0 +1,21 @@
+
+/**下拉框箭头修改。。**/
+.ant-select-arrow {
+  right: 12px !important;
+  & > span.ant-select-suffix {
+    display: none;
+  }
+  &::after {
+    display: inline-block;
+    font-family: 'fonticon' !important;
+    content: '\e901';
+    color: @gs-grey-3;
+    font-size: 12px;
+    transition: transform 0.28s;
+  }
+}
+.ant-select-open {
+  .ant-select-arrow::after {
+    transform: rotate(-180deg);
+  }
+}

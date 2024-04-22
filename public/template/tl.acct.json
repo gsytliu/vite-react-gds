@@ -1,0 +1,33 @@
+{
+  "lvl": "acct",
+  "lang": "ACCT",
+  "sub": [
+    {
+      "lvl": "ipvt",
+      "lang": "IPVT",
+      "sub": [
+        {
+          "name": "P271",
+          "lang": "ACCOUNT_ACTIVE",
+          "access": "role==user",
+          "el": "input"
+        },
+        {
+          "name": "P333",
+          "lang": "ACCOUNT_ACTIVE",
+          "el": "select",
+          "opts": [
+            {"v": "0", "t": "SIP", "access": "role==admin"},
+            {"v": "12", "t": "IPVT"}
+          ]
+        },
+        {
+          "name": "P400",
+          "lang": "SERVER",
+          "el": "checkbox"
+        }
+        
+      ]
+    }
+  ]
+}

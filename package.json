@@ -1,0 +1,49 @@
+{
+  "name": "gs-vite-react",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "vite --config ./config/vite.config.ts",
+    "build": "tsc && vite build --config ./config/vite.config.ts",
+    "type-check": "tsc --noEmit",
+    "preview": "vite preview --config ./config/vite.config.ts"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.2.6",
+    "ahooks": "^3.7.8",
+    "antd": "4.24.14",
+    "axios": "^1.6.2",
+    "classnames": "^2.3.2",
+    "js-cookie": "^3.0.5",
+    "js-storage": "^1.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-intl": "^6.5.5",
+    "react-router-dom": "^6.21.0",
+    "react-transition-group": "^4.4.5",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
+    "@types/mockjs": "^1.0.10",
+    "@types/node": "^18.19.3",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-legacy": "^4.1.1",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "eslint-config-gs-react": "^1.0.0",
+    "less": "^4.2.0",
+    "mockjs": "^1.1.0",
+    "prettier": "^2.8.8",
+    "rollup-plugin-visualizer": "^5.11.0",
+    "terser": "^5.26.0",
+    "typescript": "^5.3.3",
+    "vite": "^4.5.1",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-importer": "^0.2.5",
+    "vite-plugin-mock-dev-server": "^1.4.3",
+    "vite-plugin-svgr": "^4.2.0"
+  }
+}

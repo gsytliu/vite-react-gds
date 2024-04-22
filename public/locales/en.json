@@ -1,0 +1,13 @@
+{
+  "STATUS": "Status",
+  "ACCT": "Account",
+  "SIP": "SIP",
+  "IPVT": "IPVT",
+  "ETH": "Ethernet",
+  "WIFI": "Wi-Fi",
+  "ACCOUNT_ACTIVE": "Account Active",
+  "ACCOUNT_ACTIVE_TT": "Account Active tooltip",
+  "SERVER": "Server",
+  "SERVER_TT": "Server tooltip",
+  "UPLOAD": "UPLOAD"
+}

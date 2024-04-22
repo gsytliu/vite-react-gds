@@ -1,0 +1,1 @@
+1. 循环依赖问题 https://github.com/vitejs/vite/issues/3033

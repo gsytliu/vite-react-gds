@@ -1,0 +1,80 @@
+/***********************************通用的表格样式**********************************/
+.ant-table-wrapper.table-common {
+
+  .ant-table-thead > tr > th::before {
+    display: none;
+  }
+
+  .ant-table-thead > tr > th {
+    font-weight: 700;
+    padding: 9px 8px 8px;
+  }
+
+  .ant-table-column-sorters {
+    justify-content: flex-start;
+    .ant-table-column-title {
+      flex: unset;
+    }
+  }
+  .ant-table-thead th.ant-table-column-sort {
+    background: #F2F3F5;
+    .ant-table-column-title {
+      color: @gs-primary-color;
+    }
+  }
+  
+  .ant-table-thead th.ant-table-column-has-sorters:hover {
+    background: #F2F3F5;
+  }
+  td.ant-table-column-sort {
+    background: unset;
+  }
+
+
+  .gsicon {
+    font-size: 24px;
+    vertical-align: middle;
+    color: @gs-text-3;
+    cursor: pointer;
+    margin-right: 10px;
+    &:hover {
+      color: @gs-primary-color;
+    }
+
+  
+  }
+
+  .ant-pagination {
+    margin-bottom: 0;
+    .ant-pagination-total-text {
+      font-size: 12px;
+      margin-right: 16px;
+      color: @gs-text-2;
+    }
+    .ant-pagination-item {
+      font-size: 12px;
+      &-active {
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+    .ant-pagination-options {
+      font-size: 12px;
+      .ant-select {
+        font-size: 12px;
+      }
+      &-quick-jumper {
+        color: @gs-text-2;
+      }
+    }
+    .ant-pagination-disabled {
+      .ant-pagination-item-link {
+        background-color: @gs-grey-5;
+      }
+    }
+    .ant-pagination-options-quick-jumper-button {
+      display: none;
+    }
+  }
+}

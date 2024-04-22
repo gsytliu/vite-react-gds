@@ -1,0 +1,103 @@
+
+// 清浮动
+.clearfix() {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+// 垂直居中高度
+.mid-height(@h) {
+  height: @h;
+  line-height: @h;
+}
+
+
+
+/**
+  省略号
+**/
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/**
+  多行省略号
+**/
+.multi-ellips(@n) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: @n;  /*定义行数*/
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+
+/**
+  水平垂直居中
+**/
+.centre {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+/**
+  绝对定位下的水平垂直居中
+**/
+.abhoz-centre(@w) {
+  position: absolute;
+  width: @w;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/*
+  通用背景设置
+*/
+.bg(@image, @w:100%, @h: 100%) {
+  background-image: url('@/assets/images/@{image}');
+  background-position: center center;
+  background-size: @w @h;
+  background-repeat: no-repeat;
+}
+
+/*
+  原生滚动条颜色
+*/
+.scrollbar-track-color(@c) {
+  &::-webkit-scrollbar-track-piece {
+    background-color: @c;
+  }
+
+  scrollbar-color: #e7e7e7 @c;
+}
+
+/*
+  向上偏移
+*/
+.up(@px) {
+  position: relative;
+  bottom: @px;
+}
+
+
+/*
+  svg 字体大写控制
+*/
+.iconsize(@px) {
+  font-size:@px;
+  height:@px;
+  width:@px;
+  line-height:@px;
+}

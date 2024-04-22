@@ -1,0 +1,160 @@
+.ant-form.form-common, .ant-form.form-max-modal {
+  width: 940px;
+  margin: 0 auto;
+
+
+
+  .form-sub-title {
+    margin-bottom: 22px;
+    padding-left: 10px;
+    &:not(:first-child) {
+      // 使用margin-top会造成塌陷
+      padding-top: 10px;
+    }
+    span.title-main {
+      display: block;
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 12px;
+      .mid-height(24px);
+    }
+    span.title-tip {
+      font-size: 12px;
+      color: #909399;
+    }
+  }
+
+  .basic-item {
+    &.shl {
+      .ant-form-item-label > label {
+        background: #E7F2FF;
+        &.ant-form-item-required:not(
+          .ant-form-item-required-mark-optional
+        )::before {
+          background: #fff;
+        }
+      }
+    }
+
+
+    .ant-form-item-control {
+      width: 440px;
+      flex: none;
+      position: relative;
+    }
+    .ant-form-item-label {
+      width: 252px;
+      padding-left: 10px;
+      padding-right: 12px;
+      white-space: normal;
+      overflow: visible;
+      & > label {
+        min-height: 32px;
+        line-height: 20px;
+        height: auto;
+        font-weight: 600;
+        &::after {
+          margin: 0;
+        }
+      }
+      /**必填标签定位**/
+
+      &
+        > label.ant-form-item-required:not(
+          .ant-form-item-required-mark-optional
+        )::before {
+        position: absolute;
+        left: -7px;
+        color:@gs-minor-4;
+        font-size: 15px;
+        top: 10px;
+        font-family: sans-serif;
+      }
+      // 火狐下必填标签样式不太对劲
+      @-moz-document url-prefix() {
+        &
+          > label.ant-form-item-required:not(
+            .ant-form-item-required-mark-optional
+          )::before {
+          font-size: 15px;
+          top: 12px;
+          font-family: sans-serif;
+        }
+      }
+    }
+
+    .ant-form-item-explain {
+      font-size: 12px;
+     
+    }
+
+    .basic-item-extra {
+      position: absolute;
+      left: 448px;
+      top: 0;
+      min-height: 32px;
+      line-height: 18px;
+      width: 240px;
+      font-size: 12px;
+      color: @gs-text-3;
+      display: inline-flex;
+      align-items: center;
+    }
+
+  }
+
+  .unit-item {
+    display: flex;
+    margin-bottom: 20px;
+    &.shl {
+      label {
+        background: #E7F2FF;
+      }
+    }
+    .unit-item-label {
+      width: 252px;
+      font-weight: 600;
+      padding-left: 10px;
+      padding-right: 12px;
+    }
+    label {
+      min-height: 32px;
+      line-height: 20px;
+      height: auto;
+      display: inline-flex;
+      align-items: center;
+      color: #6E7176;
+      font-size: 14px;
+      &::after {
+        margin: 0;
+        content: '';
+      }
+    }
+    .unit-item-tooltip {
+      color: rgba(0, 0, 0, 0.45);
+      cursor: help;
+      writing-mode: horizontal-tb;
+      margin-inline-start: 4px;
+    }
+    .unit-item-control {
+      position: relative;
+      width: 440px;
+      min-height: 32px;
+      line-height: 32px;
+    }
+    .unit-item-extra {
+      position: absolute;
+      left: 448px;
+      top: 0;
+      min-height: 32px;
+      line-height: 18px;
+      width: 240px;
+      font-size: 12px;
+      color: @gs-text-3;
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+
+ 
+}
